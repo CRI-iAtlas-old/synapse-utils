@@ -226,6 +226,9 @@ Downloading: 4.6 kB     </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="subset-to-irwg-files" class="section level3">
+<h3>Subset to IRWG files</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfZ3NfaXJ3Z19kZiA8LSBmaWxlc19nc19kZiAlPiUgXG4gICAgZmlsdGVyKGlzSVJXRylcbmBgYCJ9 -->
@@ -235,23 +238,26 @@ Downloading: 4.6 kB     </code></pre>
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 </div>
-<div id="read-latest-manifest-from-synapse" class="section level3">
-<h3>Read latest manifest from Synapse</h3>
+<div id="read-latest-manifest-from-synapse-irwg-files" class="section level3">
+<h3>Read latest manifest from Synapse (IRWG files)</h3>
 <p><strong>Note:</strong> generated using the following command:</p>
 <pre><code>python python/data_manifest.py syn4680136 data</code></pre>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfc3luX2lyd2dfZGYgPC0gcmVhZF9mZWF0aGVyKFwiZGF0YS9zeW40NjgwMTM2X21hbmlmZXN0XzIwMTctMTAtMTIuZmVhdGhlclwiKVxuYGBgIn0= -->
-<pre class="r"><code>files_syn_irwg_df &lt;- read_feather(&quot;data/syn4680136_manifest_2017-10-12.feather&quot;)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfc3luX2lyd2dfZGYgPC0gcmVhZF9mZWF0aGVyKFwiLi4vZGF0YS9zeW40NjgwMTM2X21hbmlmZXN0XzIwMTctMTAtMTMuZmVhdGhlclwiKVxuYGBgIn0= -->
+<pre class="r"><code>files_syn_irwg_df &lt;- read_feather(&quot;../data/syn4680136_manifest_2017-10-13.feather&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiQ29lcmNpbmcgaW50NjQgdG8gZG91YmxlXG4ifQ== -->
 <pre><code>Coercing int64 to double</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+</div>
+<div id="merge-google-and-synapse-based-manifests-irwg-files" class="section level3">
+<h3>Merge Google and Synapse based manifests (IRWG files)</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sX29yZGVyIDwtIGMoXCJpc0lSV0dcIiwgXCJyb290UGF0aFwiLCBcInJvb3RJZFwiLCBcImZvbGRlclBhdGhcIiwgXCJmb2xkZXJJZFwiLCBcbiAgICAgICAgICAgICAgIFwiZW50aXR5TmFtZVwiLCBcImVudGl0eUlkXCIsIFwiZmlsZU5hbWVcIiwgXCJkb3dubG9hZE5hbWVcIiwgXG4gICAgICAgICAgICAgICBcImV4dGVybmFsVVJMXCIsIFwiY29udGVudE1kNVwiLCBcImNvbnRlbnRTaXplXCIsIFwidmVyc2lvbk51bWJlclwiLCBcbiAgICAgICAgICAgICAgIFwiY3JlYXRlZEJ5SWRcIiwgXCJjcmVhdGVkQnlOYW1lXCIsIFwiY3JlYXRlZEJ5VXNlclwiLCBcbiAgICAgICAgICAgICAgIFwibW9kaWZpZWRCeUlkXCIsIFwibW9kaWZpZWRCeU5hbWVcIiwgXCJtb2RpZmllZEJ5VXNlclwiLCAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgIFwiQ29udHJpYnV0b3JcIiwgXCJCaWdRdWVyeVRhYmxlXCIsIFwiRmlsdGVyZWRBbm5vdGF0ZWRCaWdRdWVyeVRhYmxlXCIsIFxuICAgICAgICAgICAgICAgXCJLZWVwXCIsIFwiUGhhc2VcIiwgXCJOb3Rlc1wiKVxuZmlsZXNfbWFzdGVyX2lyd2dfZGYgPC0gZmlsZXNfc3luX2lyd2dfZGYgJT4lIFxuICAgIGxlZnRfam9pbihmaWxlc19nc19pcndnX2RmICU+JSBcbiAgICAgICAgICAgICAgICAgIHNlbGVjdChpc0lSV0csIHJvb3RQYXRoLCByb290SWQsIGZpbGVJZCwgQ29udHJpYnV0b3IsIFxuICAgICAgICAgICAgICAgICAgICAgICAgIEJpZ1F1ZXJ5VGFibGUsIEZpbHRlcmVkQW5ub3RhdGVkQmlnUXVlcnlUYWJsZSxcbiAgICAgICAgICAgICAgICAgICAgICAgICBLZWVwLCBQaGFzZSwgTm90ZXMpLCBcbiAgICAgICAgICAgICAgYnkgPSBjKFwiZW50aXR5SWRcIiA9IFwiZmlsZUlkXCIpKSAlPiUgXG4gICAgc2VsZWN0KG9uZV9vZihjb2xfb3JkZXIpKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sX29yZGVyIDwtIGMoXCJpc0lSV0dcIiwgXCJyb290UGF0aFwiLCBcInJvb3RJZFwiLCBcImZvbGRlclBhdGhcIiwgXCJmb2xkZXJJZFwiLCBcbiAgICAgICAgICAgICAgIFwiZW50aXR5TmFtZVwiLCBcImVudGl0eUlkXCIsIFwiZmlsZU5hbWVcIiwgXCJkb3dubG9hZE5hbWVcIiwgXG4gICAgICAgICAgICAgICBcImV4dGVybmFsVVJMXCIsIFwiY29udGVudE1kNVwiLCBcImNvbnRlbnRTaXplXCIsIFwidmVyc2lvbk51bWJlclwiLCBcbiAgICAgICAgICAgICAgIFwiY3JlYXRlZEJ5SWRcIiwgXCJjcmVhdGVkQnlOYW1lXCIsIFwiY3JlYXRlZEJ5VXNlclwiLCBcbiAgICAgICAgICAgICAgIFwibW9kaWZpZWRCeUlkXCIsIFwibW9kaWZpZWRCeU5hbWVcIiwgXCJtb2RpZmllZEJ5VXNlclwiLCAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgIFwiQ29udHJpYnV0b3JcIiwgXCJCaWdRdWVyeVRhYmxlXCIsIFwiRmlsdGVyZWRBbm5vdGF0ZWRCaWdRdWVyeVRhYmxlXCIsIFxuICAgICAgICAgICAgICAgXCJLZWVwXCIsIFwiUGhhc2VcIiwgXCJOb3Rlc1wiKVxuZmlsZXNfbWFzdGVyX2lyd2dfZGYgPC0gZmlsZXNfc3luX2lyd2dfZGYgJT4lIFxuICAgIGxlZnRfam9pbihmaWxlc19nc19pcndnX2RmICU+JSBcbiAgICAgICAgICAgICAgICAgIHNlbGVjdChpc0lSV0csIHJvb3RQYXRoLCByb290SWQsIGZpbGVJZCwgQ29udHJpYnV0b3IsIFxuICAgICAgICAgICAgICAgICAgICAgICAgIEJpZ1F1ZXJ5VGFibGUsIEZpbHRlcmVkQW5ub3RhdGVkQmlnUXVlcnlUYWJsZSxcbiAgICAgICAgICAgICAgICAgICAgICAgICBLZWVwLCBQaGFzZSwgTm90ZXMpLCBcbiAgICAgICAgICAgICAgYnkgPSBjKFwiZW50aXR5SWRcIiA9IFwiZmlsZUlkXCIpKSAlPiUgXG4gICAgcmVuYW1lKHJvb3RQYXRoID0gcm9vdFBhdGgueCwgcm9vdElkID0gcm9vdElkLngpICU+JSBcbiAgICBzZWxlY3Qob25lX29mKGNvbF9vcmRlcikpICU+JSBcbiAgICByZXBsYWNlX25hKGxpc3QoaXNJUldHID0gVFJVRSkpXG5gYGAifQ== -->
 <pre class="r"><code>col_order &lt;- c(&quot;isIRWG&quot;, &quot;rootPath&quot;, &quot;rootId&quot;, &quot;folderPath&quot;, &quot;folderId&quot;, 
                &quot;entityName&quot;, &quot;entityId&quot;, &quot;fileName&quot;, &quot;downloadName&quot;, 
                &quot;externalURL&quot;, &quot;contentMd5&quot;, &quot;contentSize&quot;, &quot;versionNumber&quot;, 
@@ -265,14 +271,103 @@ files_master_irwg_df &lt;- files_syn_irwg_df %&gt;%
                          BigQueryTable, FilteredAnnotatedBigQueryTable,
                          Keep, Phase, Notes), 
               by = c(&quot;entityId&quot; = &quot;fileId&quot;)) %&gt;% 
-    select(one_of(col_order))</code></pre>
+    rename(rootPath = rootPath.x, rootId = rootId.x) %&gt;% 
+    select(one_of(col_order)) %&gt;% 
+    replace_na(list(isIRWG = TRUE))</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="subset-to-non-irwg-files" class="section level3">
+<h3>Subset to non-IRWG files</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfZ3Nfb3RoZXJfZGYgPC0gZmlsZXNfZ3NfZGYgJT4lIFxuICAgIGZpbHRlcighaXNJUldHKVxuYGBgIn0= -->
+<pre class="r"><code>files_gs_other_df &lt;- files_gs_df %&gt;% 
+    filter(!isIRWG)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfZ3Nfb3RoZXJfZGYgJT4lIFxuICAgIHNlbGVjdChmb2xkZXJQYXRoLCBmb2xkZXJJZCwgZW50aXR5TmFtZSA9IGZpbGVOYW1lLCBlbnRpdHlJZCA9IGZpbGVJZCkgJT4lIFxuICAgIHdyaXRlX2ZlYXRoZXIoXCIuLi9kYXRhL25vbklSV0dfYmFzZS1tYW5pZmVzdC5mZWF0aGVyXCIpXG5gYGAifQ== -->
+<pre class="r"><code>files_gs_other_df %&gt;% 
+    select(folderPath, folderId, entityName = fileName, entityId = fileId) %&gt;% 
+    write_feather(&quot;../data/nonIRWG_base-manifest.feather&quot;)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="read-latest-manifest-from-synapse-non-irwg-files" class="section level3">
+<h3>Read latest manifest from Synapse (non-IRWG files)</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfc3luX290aGVyX2RmIDwtIHJlYWRfZmVhdGhlcihcIi4uL2RhdGEvbm9uaXJ3Z19tYW5pZmVzdF8yMDE3LTEwLTEzLmZlYXRoZXJcIilcblxuYGBgIn0= -->
+<pre class="r"><code>files_syn_other_df &lt;- read_feather(&quot;../data/nonirwg_manifest_2017-10-13.feather&quot;)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQ29lcmNpbmcgaW50NjQgdG8gZG91YmxlQ29lcmNpbmcgaW50NjQgdG8gZG91YmxlXG4ifQ== -->
+<pre><code>Coercing int64 to doubleCoercing int64 to double</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="merge-google-and-synapse-based-manifests-non-irwg-files" class="section level3">
+<h3>Merge Google and Synapse based manifests (non-IRWG files)</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY29sX29yZGVyIDwtIGMoXCJpc0lSV0dcIiwgXCJyb290UGF0aFwiLCBcInJvb3RJZFwiLCBcImZvbGRlclBhdGhcIiwgXCJmb2xkZXJJZFwiLCBcbiAgICAgICAgICAgICAgIFwiZW50aXR5TmFtZVwiLCBcImVudGl0eUlkXCIsIFwiZmlsZU5hbWVcIiwgXCJkb3dubG9hZE5hbWVcIiwgXG4gICAgICAgICAgICAgICBcImV4dGVybmFsVVJMXCIsIFwiY29udGVudE1kNVwiLCBcImNvbnRlbnRTaXplXCIsIFwidmVyc2lvbk51bWJlclwiLCBcbiAgICAgICAgICAgICAgIFwiY3JlYXRlZEJ5SWRcIiwgXCJjcmVhdGVkQnlOYW1lXCIsIFwiY3JlYXRlZEJ5VXNlclwiLCBcbiAgICAgICAgICAgICAgIFwibW9kaWZpZWRCeUlkXCIsIFwibW9kaWZpZWRCeU5hbWVcIiwgXCJtb2RpZmllZEJ5VXNlclwiLCAgICAgICAgICAgICBcbiAgICAgICAgICAgICAgIFwiQ29udHJpYnV0b3JcIiwgXCJCaWdRdWVyeVRhYmxlXCIsIFwiRmlsdGVyZWRBbm5vdGF0ZWRCaWdRdWVyeVRhYmxlXCIsIFxuICAgICAgICAgICAgICAgXCJLZWVwXCIsIFwiUGhhc2VcIiwgXCJOb3Rlc1wiKVxuZmlsZXNfbWFzdGVyX290aGVyX2RmIDwtIGZpbGVzX3N5bl9vdGhlcl9kZiAlPiUgXG4gICAgbGVmdF9qb2luKGZpbGVzX2dzX290aGVyX2RmICU+JSBcbiAgICAgICAgICAgICAgICAgIHNlbGVjdChpc0lSV0csIHJvb3RQYXRoLCByb290SWQsIGZpbGVJZCwgQ29udHJpYnV0b3IsIFxuICAgICAgICAgICAgICAgICAgICAgICAgIEJpZ1F1ZXJ5VGFibGUsIEZpbHRlcmVkQW5ub3RhdGVkQmlnUXVlcnlUYWJsZSxcbiAgICAgICAgICAgICAgICAgICAgICAgICBLZWVwLCBQaGFzZSwgTm90ZXMpLCBcbiAgICAgICAgICAgICAgYnkgPSBjKFwiZW50aXR5SWRcIiA9IFwiZmlsZUlkXCIpKSAlPiUgXG4gICAgc2VsZWN0KG9uZV9vZihjb2xfb3JkZXIpKSAlPiUgXG4gICAgcmVwbGFjZV9uYShsaXN0KGlzSVJXRyA9IEZBTFNFKSlcbmBgYCJ9 -->
+<pre class="r"><code>col_order &lt;- c(&quot;isIRWG&quot;, &quot;rootPath&quot;, &quot;rootId&quot;, &quot;folderPath&quot;, &quot;folderId&quot;, 
+               &quot;entityName&quot;, &quot;entityId&quot;, &quot;fileName&quot;, &quot;downloadName&quot;, 
+               &quot;externalURL&quot;, &quot;contentMd5&quot;, &quot;contentSize&quot;, &quot;versionNumber&quot;, 
+               &quot;createdById&quot;, &quot;createdByName&quot;, &quot;createdByUser&quot;, 
+               &quot;modifiedById&quot;, &quot;modifiedByName&quot;, &quot;modifiedByUser&quot;,             
+               &quot;Contributor&quot;, &quot;BigQueryTable&quot;, &quot;FilteredAnnotatedBigQueryTable&quot;, 
+               &quot;Keep&quot;, &quot;Phase&quot;, &quot;Notes&quot;)
+files_master_other_df &lt;- files_syn_other_df %&gt;% 
+    left_join(files_gs_other_df %&gt;% 
+                  select(isIRWG, rootPath, rootId, fileId, Contributor, 
+                         BigQueryTable, FilteredAnnotatedBigQueryTable,
+                         Keep, Phase, Notes), 
+              by = c(&quot;entityId&quot; = &quot;fileId&quot;)) %&gt;% 
+    select(one_of(col_order)) %&gt;% 
+    replace_na(list(isIRWG = FALSE))</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="combine-all-files-to-create-final-manifest" class="section level3">
+<h3>Combine all files to create final manifest</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmlsZXNfbWFzdGVyX2RmIDwtIGJpbmRfcm93cyhmaWxlc19tYXN0ZXJfaXJ3Z19kZiwgZmlsZXNfbWFzdGVyX290aGVyX2RmKVxuYGBgIn0= -->
+<pre class="r"><code>files_master_df &lt;- bind_rows(files_master_irwg_df, files_master_other_df)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="create-new-worksheet-and-save-in-google-sheets" class="section level3">
+<h3>Create new worksheet and save in Google Sheets</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxud3NfbmFtZSA8LSBnbHVlOjpnbHVlKFwiRmlsZXNfe2RhdGV9XCIsIGRhdGUgPSBsdWJyaWRhdGU6OnRvZGF5KCkpXG5tYW5pZmVzdF9ncyA8LSBtYW5pZmVzdF9ncyAlPiUgXG4gICAgZ3Nfd3NfbmV3KHdzX3RpdGxlID0gd3NfbmFtZSwgaW5wdXQgPSBmaWxlc19tYXN0ZXJfZGYpXG5gYGAifQ== -->
+<pre class="r"><code>ws_name &lt;- glue::glue(&quot;Files_{date}&quot;, date = lubridate::today())
+manifest_gs &lt;- manifest_gs %&gt;% 
+    gs_ws_new(ws_title = ws_name, input = files_master_df)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiQXV0by1yZWZyZXNoaW5nIHN0YWxlIE9BdXRoIHRva2VuLlxuV29ya3NoZWV0IFwiRmlsZXNfMjAxNy0xMC0xM1wiIGFkZGVkIHRvIHNoZWV0IFwiSVJXRyBkYXRhIG1hbmlmZXN0XCIuXG5SYW5nZSBhZmZlY3RlZCBieSB0aGUgdXBkYXRlOiBcIlIxQzE6UjE1NkMyNVwiXG5Xb3Jrc2hlZXQgXCJGaWxlc18yMDE3LTEwLTEzXCIgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQgd2l0aCAzOTAwIG5ldyB2YWx1ZShzKS5cbldvcmtzaGVldCBkaW1lbnNpb25zOiAxMDAwIHggMjYuXG4ifQ== -->
+<pre><code>Auto-refreshing stale OAuth token.
+Worksheet &quot;Files_2017-10-13&quot; added to sheet &quot;IRWG data manifest&quot;.
+Range affected by the update: &quot;R1C1:R156C25&quot;
+Worksheet &quot;Files_2017-10-13&quot; successfully updated with 3900 new value(s).
+Worksheet dimensions: 1000 x 26.</code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiVXBkYXRlIGlBdGxhcyBEYXRhIE1hbmlmZXN0IgpkYXRlOiBsdWJyaWRhdGU6OnRvZGF5KCkKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkoZ29vZ2xlc2hlZXRzKQpzdXBwcmVzc01lc3NhZ2VzKGxpYnJhcnkodGlkeXZlcnNlKSkKbGlicmFyeShmZWF0aGVyKQpgYGAKCiMjIyBEb3dubG9hZCBjdXJyZW50IG1hbmlmZXN0CgpSZWFkIGN1cnJlbnQgdmVyc2lvbiBvZiBpQXRsYXMgbWFuaWZlc3QgZnJvbSBzaGFyZWQgR29vZ2xlIFNoZWV0cyBVUkwuCgpgYGB7cn0KbWFuaWZlc3RfdXJsIDwtICJodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9zcHJlYWRzaGVldHMvZC8xRHNLT2Z1ZHJ4VzA2emxfXzdwa2JJX25McEJuOVo5Y0RKNDBHZDZIY2JGWS8iCmdzX2F1dGgoKQptYW5pZmVzdF9ncyA8LSBnc191cmwobWFuaWZlc3RfdXJsKQpgYGAKCmBgYHtyLCBtZXNzYWdlPUZBTFNFfQpmaWxlc19nc19kZiA8LSBnc19yZWFkKG1hbmlmZXN0X2dzKQpgYGAKCmBgYHtyfQpmaWxlc19nc19pcndnX2RmIDwtIGZpbGVzX2dzX2RmICU+JSAKICAgIGZpbHRlcihpc0lSV0cpCmBgYAoKIyMjIFJlYWQgbGF0ZXN0IG1hbmlmZXN0IGZyb20gU3luYXBzZQoKKipOb3RlOioqIGdlbmVyYXRlZCB1c2luZyB0aGUgZm9sbG93aW5nIGNvbW1hbmQ6CmBgYApweXRob24gcHl0aG9uL2RhdGFfbWFuaWZlc3QucHkgc3luNDY4MDEzNiBkYXRhCmBgYAoKYGBge3J9CmZpbGVzX3N5bl9pcndnX2RmIDwtIHJlYWRfZmVhdGhlcigiZGF0YS9zeW40NjgwMTM2X21hbmlmZXN0XzIwMTctMTAtMTIuZmVhdGhlciIpCmBgYAoKYGBge3J9CmNvbF9vcmRlciA8LSBjKCJpc0lSV0ciLCAicm9vdFBhdGgiLCAicm9vdElkIiwgImZvbGRlclBhdGgiLCAiZm9sZGVySWQiLCAKICAgICAgICAgICAgICAgImVudGl0eU5hbWUiLCAiZW50aXR5SWQiLCAiZmlsZU5hbWUiLCAiZG93bmxvYWROYW1lIiwgCiAgICAgICAgICAgICAgICJleHRlcm5hbFVSTCIsICJjb250ZW50TWQ1IiwgImNvbnRlbnRTaXplIiwgInZlcnNpb25OdW1iZXIiLCAKICAgICAgICAgICAgICAgImNyZWF0ZWRCeUlkIiwgImNyZWF0ZWRCeU5hbWUiLCAiY3JlYXRlZEJ5VXNlciIsIAogICAgICAgICAgICAgICAibW9kaWZpZWRCeUlkIiwgIm1vZGlmaWVkQnlOYW1lIiwgIm1vZGlmaWVkQnlVc2VyIiwgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICJDb250cmlidXRvciIsICJCaWdRdWVyeVRhYmxlIiwgIkZpbHRlcmVkQW5ub3RhdGVkQmlnUXVlcnlUYWJsZSIsIAogICAgICAgICAgICAgICAiS2VlcCIsICJQaGFzZSIsICJOb3RlcyIpCmZpbGVzX21hc3Rlcl9pcndnX2RmIDwtIGZpbGVzX3N5bl9pcndnX2RmICU+JSAKICAgIGxlZnRfam9pbihmaWxlc19nc19pcndnX2RmICU+JSAKICAgICAgICAgICAgICAgICAgc2VsZWN0KGlzSVJXRywgcm9vdFBhdGgsIHJvb3RJZCwgZmlsZUlkLCBDb250cmlidXRvciwgCiAgICAgICAgICAgICAgICAgICAgICAgICBCaWdRdWVyeVRhYmxlLCBGaWx0ZXJlZEFubm90YXRlZEJpZ1F1ZXJ5VGFibGUsCiAgICAgICAgICAgICAgICAgICAgICAgICBLZWVwLCBQaGFzZSwgTm90ZXMpLCAKICAgICAgICAgICAgICBieSA9IGMoImVudGl0eUlkIiA9ICJmaWxlSWQiKSkgJT4lIAogICAgc2VsZWN0KG9uZV9vZihjb2xfb3JkZXIpKQpgYGAKCg==</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiVXBkYXRlIGlBdGxhcyBEYXRhIE1hbmlmZXN0IgpkYXRlOiBsdWJyaWRhdGU6OnRvZGF5KCkKb3V0cHV0OiBodG1sX25vdGVib29rCi0tLQoKYGBge3J9CmxpYnJhcnkoZ29vZ2xlc2hlZXRzKQpzdXBwcmVzc01lc3NhZ2VzKGxpYnJhcnkodGlkeXZlcnNlKSkKbGlicmFyeShmZWF0aGVyKQpgYGAKCiMjIyBEb3dubG9hZCBjdXJyZW50IG1hbmlmZXN0CgpSZWFkIGN1cnJlbnQgdmVyc2lvbiBvZiBpQXRsYXMgbWFuaWZlc3QgZnJvbSBzaGFyZWQgR29vZ2xlIFNoZWV0cyBVUkwuCgpgYGB7cn0KbWFuaWZlc3RfdXJsIDwtICJodHRwczovL2RvY3MuZ29vZ2xlLmNvbS9zcHJlYWRzaGVldHMvZC8xRHNLT2Z1ZHJ4VzA2emxfXzdwa2JJX25McEJuOVo5Y0RKNDBHZDZIY2JGWS8iCmdzX2F1dGgoKQptYW5pZmVzdF9ncyA8LSBnc191cmwobWFuaWZlc3RfdXJsKQpgYGAKCmBgYHtyLCBtZXNzYWdlPUZBTFNFfQpmaWxlc19nc19kZiA8LSBnc19yZWFkKG1hbmlmZXN0X2dzKQpgYGAKCiMjIyBTdWJzZXQgdG8gSVJXRyBmaWxlcwoKYGBge3J9CmZpbGVzX2dzX2lyd2dfZGYgPC0gZmlsZXNfZ3NfZGYgJT4lIAogICAgZmlsdGVyKGlzSVJXRykKYGBgCgojIyMgUmVhZCBsYXRlc3QgbWFuaWZlc3QgZnJvbSBTeW5hcHNlIChJUldHIGZpbGVzKQoKKipOb3RlOioqIGdlbmVyYXRlZCB1c2luZyB0aGUgZm9sbG93aW5nIGNvbW1hbmQ6CmBgYApweXRob24gcHl0aG9uL2RhdGFfbWFuaWZlc3QucHkgc3luNDY4MDEzNiBkYXRhCmBgYAoKYGBge3J9CmZpbGVzX3N5bl9pcndnX2RmIDwtIHJlYWRfZmVhdGhlcigiLi4vZGF0YS9zeW40NjgwMTM2X21hbmlmZXN0XzIwMTctMTAtMTMuZmVhdGhlciIpCmBgYAoKIyMjIE1lcmdlIEdvb2dsZSBhbmQgU3luYXBzZSBiYXNlZCBtYW5pZmVzdHMgKElSV0cgZmlsZXMpCgpgYGB7cn0KY29sX29yZGVyIDwtIGMoImlzSVJXRyIsICJyb290UGF0aCIsICJyb290SWQiLCAiZm9sZGVyUGF0aCIsICJmb2xkZXJJZCIsIAogICAgICAgICAgICAgICAiZW50aXR5TmFtZSIsICJlbnRpdHlJZCIsICJmaWxlTmFtZSIsICJkb3dubG9hZE5hbWUiLCAKICAgICAgICAgICAgICAgImV4dGVybmFsVVJMIiwgImNvbnRlbnRNZDUiLCAiY29udGVudFNpemUiLCAidmVyc2lvbk51bWJlciIsIAogICAgICAgICAgICAgICAiY3JlYXRlZEJ5SWQiLCAiY3JlYXRlZEJ5TmFtZSIsICJjcmVhdGVkQnlVc2VyIiwgCiAgICAgICAgICAgICAgICJtb2RpZmllZEJ5SWQiLCAibW9kaWZpZWRCeU5hbWUiLCAibW9kaWZpZWRCeVVzZXIiLCAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIkNvbnRyaWJ1dG9yIiwgIkJpZ1F1ZXJ5VGFibGUiLCAiRmlsdGVyZWRBbm5vdGF0ZWRCaWdRdWVyeVRhYmxlIiwgCiAgICAgICAgICAgICAgICJLZWVwIiwgIlBoYXNlIiwgIk5vdGVzIikKZmlsZXNfbWFzdGVyX2lyd2dfZGYgPC0gZmlsZXNfc3luX2lyd2dfZGYgJT4lIAogICAgbGVmdF9qb2luKGZpbGVzX2dzX2lyd2dfZGYgJT4lIAogICAgICAgICAgICAgICAgICBzZWxlY3QoaXNJUldHLCByb290UGF0aCwgcm9vdElkLCBmaWxlSWQsIENvbnRyaWJ1dG9yLCAKICAgICAgICAgICAgICAgICAgICAgICAgIEJpZ1F1ZXJ5VGFibGUsIEZpbHRlcmVkQW5ub3RhdGVkQmlnUXVlcnlUYWJsZSwKICAgICAgICAgICAgICAgICAgICAgICAgIEtlZXAsIFBoYXNlLCBOb3RlcyksIAogICAgICAgICAgICAgIGJ5ID0gYygiZW50aXR5SWQiID0gImZpbGVJZCIpKSAlPiUgCiAgICByZW5hbWUocm9vdFBhdGggPSByb290UGF0aC54LCByb290SWQgPSByb290SWQueCkgJT4lIAogICAgc2VsZWN0KG9uZV9vZihjb2xfb3JkZXIpKSAlPiUgCiAgICByZXBsYWNlX25hKGxpc3QoaXNJUldHID0gVFJVRSkpCmBgYAoKIyMjIFN1YnNldCB0byBub24tSVJXRyBmaWxlcwoKYGBge3J9CmZpbGVzX2dzX290aGVyX2RmIDwtIGZpbGVzX2dzX2RmICU+JSAKICAgIGZpbHRlcighaXNJUldHKQpgYGAKCmBgYHtyfQpmaWxlc19nc19vdGhlcl9kZiAlPiUgCiAgICBzZWxlY3QoZm9sZGVyUGF0aCwgZm9sZGVySWQsIGVudGl0eU5hbWUgPSBmaWxlTmFtZSwgZW50aXR5SWQgPSBmaWxlSWQpICU+JSAKICAgIHdyaXRlX2ZlYXRoZXIoIi4uL2RhdGEvbm9uSVJXR19iYXNlLW1hbmlmZXN0LmZlYXRoZXIiKQpgYGAKCiMjIyBSZWFkIGxhdGVzdCBtYW5pZmVzdCBmcm9tIFN5bmFwc2UgKG5vbi1JUldHIGZpbGVzKQoKYGBge3J9CmZpbGVzX3N5bl9vdGhlcl9kZiA8LSByZWFkX2ZlYXRoZXIoIi4uL2RhdGEvbm9uaXJ3Z19tYW5pZmVzdF8yMDE3LTEwLTEzLmZlYXRoZXIiKQpgYGAKCiMjIyBNZXJnZSBHb29nbGUgYW5kIFN5bmFwc2UgYmFzZWQgbWFuaWZlc3RzIChub24tSVJXRyBmaWxlcykKCmBgYHtyfQpjb2xfb3JkZXIgPC0gYygiaXNJUldHIiwgInJvb3RQYXRoIiwgInJvb3RJZCIsICJmb2xkZXJQYXRoIiwgImZvbGRlcklkIiwgCiAgICAgICAgICAgICAgICJlbnRpdHlOYW1lIiwgImVudGl0eUlkIiwgImZpbGVOYW1lIiwgImRvd25sb2FkTmFtZSIsIAogICAgICAgICAgICAgICAiZXh0ZXJuYWxVUkwiLCAiY29udGVudE1kNSIsICJjb250ZW50U2l6ZSIsICJ2ZXJzaW9uTnVtYmVyIiwgCiAgICAgICAgICAgICAgICJjcmVhdGVkQnlJZCIsICJjcmVhdGVkQnlOYW1lIiwgImNyZWF0ZWRCeVVzZXIiLCAKICAgICAgICAgICAgICAgIm1vZGlmaWVkQnlJZCIsICJtb2RpZmllZEJ5TmFtZSIsICJtb2RpZmllZEJ5VXNlciIsICAgICAgICAgICAgIAogICAgICAgICAgICAgICAiQ29udHJpYnV0b3IiLCAiQmlnUXVlcnlUYWJsZSIsICJGaWx0ZXJlZEFubm90YXRlZEJpZ1F1ZXJ5VGFibGUiLCAKICAgICAgICAgICAgICAgIktlZXAiLCAiUGhhc2UiLCAiTm90ZXMiKQpmaWxlc19tYXN0ZXJfb3RoZXJfZGYgPC0gZmlsZXNfc3luX290aGVyX2RmICU+JSAKICAgIGxlZnRfam9pbihmaWxlc19nc19vdGhlcl9kZiAlPiUgCiAgICAgICAgICAgICAgICAgIHNlbGVjdChpc0lSV0csIHJvb3RQYXRoLCByb290SWQsIGZpbGVJZCwgQ29udHJpYnV0b3IsIAogICAgICAgICAgICAgICAgICAgICAgICAgQmlnUXVlcnlUYWJsZSwgRmlsdGVyZWRBbm5vdGF0ZWRCaWdRdWVyeVRhYmxlLAogICAgICAgICAgICAgICAgICAgICAgICAgS2VlcCwgUGhhc2UsIE5vdGVzKSwgCiAgICAgICAgICAgICAgYnkgPSBjKCJlbnRpdHlJZCIgPSAiZmlsZUlkIikpICU+JSAKICAgIHNlbGVjdChvbmVfb2YoY29sX29yZGVyKSkgJT4lIAogICAgcmVwbGFjZV9uYShsaXN0KGlzSVJXRyA9IEZBTFNFKSkKYGBgCgojIyMgQ29tYmluZSBhbGwgZmlsZXMgdG8gY3JlYXRlIGZpbmFsIG1hbmlmZXN0IAoKYGBge3J9CmZpbGVzX21hc3Rlcl9kZiA8LSBiaW5kX3Jvd3MoZmlsZXNfbWFzdGVyX2lyd2dfZGYsIGZpbGVzX21hc3Rlcl9vdGhlcl9kZikKYGBgCgojIyMgQ3JlYXRlIG5ldyB3b3Jrc2hlZXQgYW5kIHNhdmUgaW4gR29vZ2xlIFNoZWV0cwoKYGBge3J9CndzX25hbWUgPC0gZ2x1ZTo6Z2x1ZSgiRmlsZXNfe2RhdGV9IiwgZGF0ZSA9IGx1YnJpZGF0ZTo6dG9kYXkoKSkKbWFuaWZlc3RfZ3MgPC0gbWFuaWZlc3RfZ3MgJT4lIAogICAgZ3Nfd3NfbmV3KHdzX3RpdGxlID0gd3NfbmFtZSwgaW5wdXQgPSBmaWxlc19tYXN0ZXJfZGYpCmBgYAoK</div>
 
 
 
